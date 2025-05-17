@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.bak
+*.tmp
+*.log
+node_modules/
+dist/
+.env
+*.class
+*.pyc
+*.out

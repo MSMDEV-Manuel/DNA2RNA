@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<title>DNA2RNA</title>
+	<meta author="Manuel Serrano Martínez">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<script src="data/scripts/script.js"></script>
+	<link href="data/styles/style.css" rel="stylesheet" type="text/css" />
+	<link href="data/styles/anim.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<section class="pconvert" id="pconvert">
+		<br>
+		<div class="section">
+			<center>
+				<p>Secuencia de ADN / ARN / ADN complementaria</p>
+				<input type="text" class="tbox" id="sec" value="" onkeyup="this.value=carac(this.value)"><br><br>
+				<button class="boton" onclick="getArn()">Convertir desde ADN (5'→3')</button>
+			<button class="boton" onclick="getAdn()">Convertir desde ARN</button>
+			<button class="boton" onclick="getAmb()">Convertir desde ADN (3'→5')</button>
+				<button class="boton" onclick="delData()">Borrar</button>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<p>Secuencia de ADN (5'→3')</p>
+				<textarea class="tarea" id="adn"></textarea><br>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<p>Secuencia de ADN (3'→5')</p>
+				<textarea class="tarea" id="comp"></textarea><br>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<p>Secuencia de ARN</p>
+				<textarea class="tarea" id="arn"></textarea><br>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<p>Proteína con notación de tres letras</p>
+				<textarea class="tarea" id="pro3"></textarea><br>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<p>Proteína con notación de una letra</p>
+				<textarea class="tarea" id="pro1"></textarea><br>
+			</center>
+		</div><br>
+
+		<div class="section">
+			<center>
+				<br>
+				<p><big>DNA2RNA</big><br><small>v1.0</small><br><br>
+					<small>DESARROLLADOR</small><br>Manuel Serrano Martínez<br>
+				</p>
+			</center>
+		</div><br><br><br><br>
+	</section>
+
+</body>
+
+</html>
